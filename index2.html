@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./vue.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="./style2.css">
+  <title>Techno</title>
+</head>
+
+<body>
+  <div id="app">
+    
+    
+       <!-- HEADER COM QUANTIDADE PREÇO E CARRINHO     -->
+    <header class="carrinho-compras">
+        <span class="quantidade-itens">  {{carrinho.length | quantidade}}</span>
+        <span class="valor-total"> Valor Gasto {{carrinhoTotal | valor}}</span>
+        <img @click="abrirCarrinho" src="./assets/carrinho.svg" alt="carro">
+      </header>
+
+
+        <!-- VITRINE PRINCIPAL DA LOJA -->
+    <div class="todos-itens" id="top-pagina">
+      <section  class="container-lista">
+       
+        <div v-for="lista,key,index in listaInstrumentos" :key="lista.id" @click="subirScroll(key)" class="instrumento">
+           <div class="titulo-img">
+             <h1 class="instrumento-nome"> {{lista.nome|maiuscula}} </h1>
+             <img :src="lista.img" alt="" class="instrumento-img">
+           </div>
+           <div class="instrumento-preco">
+             <span class="instrumento-preco">preço {{lista.preco | valor}}</span>
+             <span class="instrumento-quantidade">Quantidade {{lista.quantidade|quantidade}}</span>
+             <span class="instrumento-quantidade">Modelo {{lista.marca}}</span>
+           </div>
+           <p class="instrumento-descricao">{{lista.descricao}}</p>
+          </div>
+      
+       </section>
+
+       <!-- DETALHES DOS INSTRUMENOS -->
+      <section v-if="modal" class="instrumento-detalhe">
+        <button class="botao-detalhe" @click="modal=false">X</button>
+        <div class="container-detalhe">
+          <h1 class="detalhe-titulo"> {{detalheLista.nome}}</h1>
+          <div class="itens-detalhe">
+            <span class="detalhe-preco">Preço {{detalheLista.preco | valor}}</span>
+            <span class="detalhe-quantidade">Quantidade {{detalheLista.quantidade|quantidade}}</span>
+            <span class="detalhe-quantidade">Modelo {{detalheLista.marca}}</span>
+          </div>
+          <img :src="detalheLista.img" alt="" class="detalhe-img">
+          <p class="detalhe-descricao">{{detalheLista.descricao}}</p>
+        </div>
+        <button v-if="detalheLista.quantidade>0" de class="adicionar-produto" @click="adicionarProduto">adicione</button>
+        <button v-else class="adicionar-produto esgotado" disabled>Esgotado</button>
+      </section>
+    </div>
+
+
+    <!-- MODAL DE ALERTA -->
+    <div v-if="mesAlerta" class="container-modal">
+      <div class="modal-alerta">
+        <p class="msg-modal">
+          {{msgAlerta}}
+        </p>
+      </div>
+    </div>
+
+      <!-- CARRINHO DE ITENS INCLUIDOS -->
+      <div v-if="carrinhoModal" class="container-modal">
+        <div  class="modal-carrinho">
+          <ul v-for="item, index in carrinho" class="produtos-selecionados">
+            <li class="prod-nome">{{item.nome}}</li>
+            <li class="prod-preco">{{item.preco | valor}}</li>
+            <button class="remove-prod" @click="removerItem(index,item.nome)">X</button>
+          </ul>
+          <button @click="carrinhoModal= false" class="finalizar-compra">Finalizar Compra</button>
+        </div>
+      </div>
+        
+
+    <!-- INCLUIR INSTRUMENTO -->
+    <div v-if="incluirItem" class="container-modal">
+      <form class="container-formulario">
+          <h3>Incluir um novo item</h3>
+       <label>id</label>
+       <input type="text" name="id" v-model="incluiProduto.id">
+       <label>nome</label>
+       <input type="text" name="id"v-model="incluiProduto.nome">
+       <label>Preço</label>
+       <input type="number" v-model= "incluiProduto.preco">
+       <label>Quantidade</label>
+       <input type="number"  v-model= "incluiProduto.quantidade">
+       <label>Descrição</label>
+       <input type="text"  v-model= "incluiProduto.description">
+       <label>Marca</label>
+       <input type="text" v-model= "incluiProduto.marca">
+       <label>Imagem</label>
+       <input type="text" v-model= "incluiProduto.img">
+       <button @click="foi">Incluir Produto</button>
+      </form>
+    </div>
+      
+     
+       
+
+      
+  </div>
+  <script src="./app2.js"></script>
+</body>
+</html>
+    
+    
+    
+    
+   
+
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+

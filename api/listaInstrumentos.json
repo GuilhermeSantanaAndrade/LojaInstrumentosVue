@@ -1,0 +1,74 @@
+[
+    {
+      "id": "Stratocaster",
+      "nome": "Stratocaster",
+      "preco": 2999,
+      "quantidade": 1,
+      "marca": "Fender",
+      "descricao":"Good guitar deed of the day: Jared Dines just bought a brand-new Gibson Les Paul for a combat vet in need. By Richard Bienstock 5 days ago. “As much as.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/1958_Fender_Stratocaster.jpg/640px-1958_Fender_Stratocaster.jpg"
+    },
+    {
+      "id": "Violão",
+      "nome": "Violão",
+      "preco": 1299,
+      "quantidade": 8,
+      "marca": "Takamini",
+      "descricao":"Good guitar deed of the day: Jared Dines just bought a brand-new Gibson Les Paul for a combat vet in need. By Richard Bienstock 5 days ago. “As much as.",
+      "img": "https://images.tcdn.com.br/img/img_prod/726711/gf_1d_ceq_tdw_violao_folk_cutaway_eletroacustico_cor_trans_dark_wine_57_1_20191108203605.jpg"
+    },
+    {
+      "id": "Bateria",
+      "nome": "Bateria",
+      "preco": 899,
+      "descricao":"Good guitar deed of the day: Jared Dines just bought a brand-new Gibson Les Paul for a combat vet in need. By Richard Bienstock 5 days ago. “As much as.",
+      "quantidade": 9,
+      "marca": "Yamaha",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81k%2BlbmVTML._AC_SL1500_.jpg"
+    },
+    {
+      "id": "Contra-Baixo",
+      "nome": "Contra-Baixo",
+      "preco": 1199,
+      "quantidade": 2,
+      "marca": "Fender",
+      "descricao":"Good guitar deed of the day: Jared Dines just bought a brand-new Gibson Les Paul for a combat vet in need. By Richard Bienstock 5 days ago. “As much as.",
+      "img": "https://i.pinimg.com/originals/cb/06/29/cb0629be09ab84861f4016cb9aeff496.jpg"
+    },
+    {
+      "id": "Amplificador",
+      "nome": "Amplificador",
+      "preco": 599,
+      "quantidade": 3,
+      "marca": "Marshall",
+      "descricao":"Good guitar deed of the day: Jared Dines just bought a brand-new Gibson Les Paul for a combat vet in need. By Richard Bienstock 5 days ago. “As much as.",
+      "img": "https://http2.mlstatic.com/amplificador-fender-combo-champion-100w-D_NQ_NP_683130-MLB31358222408_072019-F.jpg"
+    },
+    {
+        "id": "Guitarra-Jacson",
+        "nome": "Guitarra-Jacson",
+        "preco": 899,
+        "quantidade": 6,
+        "marca": "Jacson",
+        "descricao":"Good guitar deed of the day: Jared Dines just bought a brand-new Gibson Les Paul for a combat vet in need. By Richard Bienstock 5 days ago. “As much as.",
+        "img": "https://reference.vteximg.com.br/arquivos/ids/285772-1000-1000/detalhe2.jpg?v=636288953612230000"
+      },
+      {
+        "id": "Saxofone",
+        "nome": "Saxofone",
+        "preco": 1199,
+        "quantidade": 6,
+        "marca": "Baden",
+        "descricao":"Good guitar deed of the day: Jared Dines just bought a brand-new Gibson Les Paul for a combat vet in need. By Richard Bienstock 5 days ago. “As much as.",
+        "img": "https://images-americanas.b2w.io/produtos/01/00/sku/10028/3/10028333_1GG.jpg"
+      },
+      {
+        "id": "Les Paul",
+        "nome": "Les Paul",
+        "preco": 599,
+        "quantidade": 7,
+        "marca": "Gibson",
+        "descricao":"Good guitar deed of the day: Jared Dines just bought a brand-new Gibson Les Paul for a combat vet in need. By Richard Bienstock 5 days ago. “As much as.",
+        "img": "https://static.turbosquid.com/Preview/2015/11/20__22_55_34/guitar_signature_01.jpg1db5fe89-417c-4511-b2bb-d605b80d83f0DefaultHQ.jpg"
+      }
+  ]

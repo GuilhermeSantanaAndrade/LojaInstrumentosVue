@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding: 0;
+}
+ul{
+    list-style: none
+}
+a{
+    text-decoration: none;
+}
+
+.carrinho-compras{
+    width:100%;
+    height: 30px;
+    background: #002eff1f;
+    display:grid;
+    grid-template-columns:1fr 570px 1fr 1fr;
+    grid-template-rows:1fr ;
+    padding:20px;
+    font-size:20px;
+    align-content: center;
+}
+.carrinho-compras img{
+    width:50px;
+    margin-right:60px;
+    grid-column:4;
+    cursor:pointer;
+    
+
+}
+.quantidade-itens{
+    margin-left:60px;
+    grid-column:1;
+
+}
+.valor-total{
+    margin-right:60px;
+    grid-column:3;
+}
+.todos-itens{
+    display: flex;
+    justify-content:space-betwen
+
+}
+.container-lista{
+    width:60%
+}
+.instrumento{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   border:solid black 3px;
+   width: 88%;
+   height: 200px;
+    box-shadow: 3px 30x 0 rgba(0,0,0,.5);
+    background:#002eff1f;
+    margin-bottom:30px;
+    margin-top:40px;
+    border-radius: 20px;
+
+}
+.titulo-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    
+}
+.instrumento-img{
+    box-shadow: 6px 5px 0 rgba(0,0,0,.3);
+
+}
+.instrumento-preco{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    justify-content: center;
+}
+.instrumento-preco span + span{
+    margin-top:10px;
+}
+.instrumento-nome{
+    font-size:24px
+}
+   
+
+.instrumento-img{
+    width:150px;
+    height: 114px;
+}
+.instrumento-descricao{
+    margin:10px 10px;
+}
+.instrumento-detalhe{
+    width:500px;
+    height:700px;
+    border-radius: 20px;
+    background:#002eff1f;
+    margin-top:20px;
+    animation: mostraDetalhe 2s forwards;
+}
+
+@keyframes mostraDetalhe{
+    from{
+        opacity: 0;
+        transform: translate3D(110px, 0, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3D(0, 0, 0)
+    }
+}
+
+/* MODAL */
+.detalhe-titulo{
+    text-align: center;
+}
+
+.container-detalhe{
+    padding: 10px;
+    align-items: center;
+}
+.detalhe-img{
+    width: 75%;
+    height: 368px;
+    margin: 21px 21px 5px 60px;
+}
+.detalhe-descricao{
+    width:90%;
+    margin:5px auto;
+}
+.itens-detalhe{
+    background:#c8cfef;
+    padding:10px;
+    width:92%;
+    margin:2px auto;
+    font-size: 18px;
+    border-radius:10px;
+}
+.detalhe-descricao{
+    font-size: 19px;
+}
+.botao-detalhe{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    position: relative;
+    top: -16px;
+    left: 467px;
+    border: none;
+    background:#0020ff63;
+}
+.esgotado{
+    background: gray !important;
+    color:white;
+}
+.adicionar-produto{
+    padding:8px 30px;
+    border-radius:12px;
+    font-size:15px;
+     margin:10px 187px;
+    background:#0020ff63;
+    box-shadow: 4px 5px 0 rgba(0,0,0,.5);
+}
+.container-modal{
+    position:absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,.5);
+}
+.modal-alerta{
+    width:400px;
+    height:100px;
+    background:white;
+    margin:200px auto;
+    border:solid 3px red;
+    padding:50px;
+}
+.msg-modal{
+    font-size:30px;
+    font-family: monospace;
+    color:black;
+    text-align: center;
+    align-items: center;
+    border-bottom: solid 1px black;
+
+}
+.modal-carrinho{
+    width:600px;
+   
+    background:white;
+    margin:200px auto;
+    border:solid 3px red;
+    padding:50px;
+}
+.produtos-selecionados{
+    display: grid;
+    grid-template-columns:1fr 300px 2fr 1fr;
+    justify-items: center;
+    border-bottom: solid .5px black;
+}
+.prod-nome{
+    grid-column: 1;
+}
+.prod-preco{
+     grid-column: 3;
+}
+.remove-prod{
+    grid-column: 4;
+    border:none;
+    width: 30px;
+    height: 30px;
+
+}
+.finalizar-compra{
+    background:black;
+    padding: 15px 20px;
+    color:white;
+    border-radius:10px;
+    position: relative;
+    bottom:-67px;
+    right: -457px;
+}
+.container-formulario{
+    width: 27%;
+    height: 79vh;
+    background:white;
+    margin: 100px auto;
+    padding:20px;
+    display:block;
+    
+
+}
+.container-formulario h3{
+    text-align: center;
+    font-family:monospace
+    
+}
+.container-formulario label{
+    display: block;
+    margin: 14px 0px 5px 0px;
+    font-family:monospace
+}
+.container-formulario input{
+   width:370px;
+   height:30px;
+}
+.container-formulario button{
+  padding:10px 25px;
+  margin-top: 15px;
+  border-radius:10px
+ }
+
